@@ -5,15 +5,20 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         Vector<Integer> vect = new Vector<Integer>();
-        vect.add(0, 1);
-        vect.add(1,3000 );
-        vect.add(2, 700);
-        vect.add(3, 711);
-        vect.add(4, 12);
-        vect.add(5, 903);
-        vect.add(6, 22);
-        vect.add(7, 251);
-        vect.add(8, 53);
+        // saisir la taille du vecteur 
+         System.out.println("vecteur taille  :");
+        Scanner scanner2 = new Scanner(System.in);
+        int taille2 = scanner2.nextInt();
+
+       
+        System.out.println("Saisisez les valeurs de votre vecteur :");
+        for ( int i = 0 ;  i < taille2 ; i++)
+        {
+            Scanner scanner3 = new Scanner(System.in);
+            int elem = scanner3.nextInt();
+            vect.add(i,elem);
+        }
+
 
         Vector<Integer> vect2 = VectorHelper.Inverser(vect);
 
