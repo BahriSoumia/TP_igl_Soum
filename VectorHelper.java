@@ -24,24 +24,26 @@ public int[] Inverser(Vector<Integer> vect,int k ) {
     }
 /* par bull */
 
-    public static void triBulleCroissant(Vector<Integer> vect) {
-        int longueur = vect.size();
-        int tampon = 0;
-        boolean permut ;
-
-        do{
-            permut = false ;
-            for (int i = 0; i < longueur; i++) {
-                // Teste si 2 éléments successifs sont dans le bon ordre ou non
-                if (vect.get(i) > vect.get(i+1)) {
-                    // s'ils ne le sont pas, on échange leurs positions
-                    tampon = vect.get(i);
-                    vect.add(i, vect.get(i+1));
-                    vect.add(i+1, tampon);
-                    permut = true;
+     public static void bubble_srt(int array[]) {
+        int n = array.length;
+        int k;
+        for (int m = n; m >= 0; m--) {
+            for (int i = 0; i < n - 1; i++) {
+                k = i + 1;
+                if (array[i] > array[k]) {
+                    swapNumbers(i, k, array);
                 }
-
             }
-        } 	while (permut) ;
+
+        }
     }
+
+    private static void swapNumbers(int i, int j, int[] array) {
+
+        int temp;
+        temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+
 }
