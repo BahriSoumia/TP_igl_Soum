@@ -4,7 +4,7 @@ import java.util.Vector;
  * Created by Soumia-PC on 14/10/2017.
  */
 public int[] Inverser(Vector<Integer> vect,int k ) {
-        int i, j, x;
+        int i, j, x,y;
         int n = vect.size();
         i = 0;
         j = n-1 ;
