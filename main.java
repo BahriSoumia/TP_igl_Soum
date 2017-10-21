@@ -3,7 +3,7 @@ import java.util.Vector;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
+        // test conflit sur mon compte , merging avant rania 
         Vector<Integer> vect = new Vector<Integer>();
         // saisir la taille du vecteur 
          System.out.println("vecteur taille  :");
