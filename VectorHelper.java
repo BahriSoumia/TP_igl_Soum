@@ -6,6 +6,7 @@ import java.util.Vector;
 public int[] Inverser(Vector<Integer> vect,int k ) {
         int i, j, x,y;
         int n = vect.size();
+        /* souma commentair*/
         i = 0;
         j = n-1 ;
         int [] tab = new int[vect.size()];
